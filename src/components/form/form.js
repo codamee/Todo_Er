@@ -1,6 +1,9 @@
 import "./form.css"
+
 function form() {
+    let container = document.querySelector(".sidebar")
     let divElem = document.createElement("div")
+    divElem.classList.add("formContainer")
     divElem.innerHTML =/*html*/
         `
         <div class="form">
@@ -15,7 +18,7 @@ function form() {
                 </div>
                 <div>
                     <label for="date">Due-Time</label>
-                    <input type="datetime" name="date" id="date" />
+                    <input type="" name="date" id="date" />
                 </div>
                 <div>
                     <label for="priority">Priority</label>
@@ -25,8 +28,11 @@ function form() {
                             <option value="Least">Least</option>
                     </select>
                 </div>
+                <button type=button >Add Project</button>
             </form>
         </div>
     `
-    
+    container.append(divElem)
 }
+form()
+export { form }
