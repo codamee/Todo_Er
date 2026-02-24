@@ -14,7 +14,7 @@ class Project {
         this.#todos = []
     }
     setArray(title, discription, duetime, priority) {
-        let obj = new Project(title, discription, duetime, priority)
+        let obj = new Todo(title, discription, duetime, priority)
         this.#todos.push(obj)
     }
     getArray() {

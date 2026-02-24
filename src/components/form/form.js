@@ -18,7 +18,7 @@ function form() {
                 </div>
                 <div>
                     <label for="date">Due-Time</label>
-                    <input type="" name="date" id="date" />
+                        <input type="date" name="date" id="date" />
                 </div>
                 <div>
                     <label for="priority">Priority</label>
@@ -28,7 +28,7 @@ function form() {
                             <option value="Least">Least</option>
                     </select>
                 </div>
-                <button type=button >Add Project</button>
+                <button type=button id=submitBtn >Add Project</button>
             </form>
         </div>
     `
